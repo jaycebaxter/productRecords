@@ -1,21 +1,64 @@
 public class Product {
 
     // The ID / SKU of the product
-    public int skuNum;
+    private int skuNum;
 
     // The name of the product
-    public String productName;
+    private String productName;
 
     // The cost of the product
-    public double productCost;
+    private double productCost;
 
     // Number in stock
-    public int inStock;
+    private int inStock;
 
     // Amount we need to order
-    public int toOrder;
+    private int toOrder;
 
     // Special instructions
-    public String specialInstructions;
+    private String specialInstructions;
+
+    // Getters and setters
+    public int getSkuNum() {
+        return skuNum;
+    }
+    public void setSkuNum(int skuNum) {
+        this.skuNum = skuNum;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public double getProductCost() {
+        return productCost;
+    }
+    public void setProductCost(double productCost) {
+        this.productCost = productCost;
+    }
+
+    public int getInStock() {
+        return inStock;
+    }
+    public void setInStock(int inStock) {
+        this.inStock = inStock;
+    }
+
+    public int getToOrder() {
+        return toOrder;
+    }
+    public void setToOrder(int toOrder) {
+        this.toOrder = toOrder;
+    }
+
+    public String getSpecialInstructions() {
+        return specialInstructions;
+    }
+    public void setSpecialInstructions(String specialInstructions) {
+        this.specialInstructions = specialInstructions;
+    }
 
 }

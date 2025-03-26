@@ -81,4 +81,13 @@ public class Product {
         this.specialInstructions = specialInstructions;
     }
 
+    public void display() {
+        System.out.print("SKU Number: " + skuNum);
+        System.out.print("Product Name: " + productName);
+        System.out.print("Product Cost: " + productCost);
+        System.out.print("Number in Stock: " + inStock);
+        System.out.print("Need to Order: " + toOrder);
+        System.out.print("Special Instructions: " + specialInstructions);
+    }
+
 }

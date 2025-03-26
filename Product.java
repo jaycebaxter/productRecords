@@ -61,4 +61,24 @@ public class Product {
         this.specialInstructions = specialInstructions;
     }
 
+    // Default constructor
+    public Product() {
+        this.skuNum = 0;
+        this.productName = "N/A";
+        this.productCost = 0.00;
+        this.inStock = 0;
+        this.toOrder = 0;
+        this.specialInstructions = "N/A";
+    }
+
+    // Parameterized constructor
+    public Product(int skuNum, String productName, double productCost, int inStock, int toOrder, String specialInstructions) {
+        this.skuNum = skuNum;
+        this.productName = productName;
+        this.productCost = productCost;
+        this.inStock = inStock;
+        this.toOrder = toOrder;
+        this.specialInstructions = specialInstructions;
+    }
+
 }

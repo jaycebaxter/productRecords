@@ -9,8 +9,7 @@ public class Driver {
 
         // Initializing list of objects
         ArrayList<Product> productArray = new ArrayList<Product>();
-
-
+        
         // Non-perishable products
         // Canned Beans
         Product cannedBeans = new Product(100629175, "Canned Beans", 5.99, 16, 3, "BE CAREFUL!!!!!!!!!!!!!!");
@@ -31,6 +30,7 @@ public class Driver {
         // Bread
         Perishable breadLoaf = new Perishable(100717939, "Loaf of Bread", 4.00, 15, 10, "N/A", LocalDate.of(2025, 4, 3));
 
+        // Adding all products to productArray arraylist
         productArray.add(cannedBeans);
         productArray.add(cannedCorn);
         productArray.add(cannedTuna);
@@ -40,6 +40,7 @@ public class Driver {
 
         // https://www.w3schools.com/java/java_howto_loop_through_arraylist.asp
         for (Product product : productArray) {
+            System.out.println("");
             product.display();
         }
     }

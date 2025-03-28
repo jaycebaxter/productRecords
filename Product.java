@@ -78,12 +78,12 @@ public class Product {
 
     // Display function
     public void display() {
-        System.out.print("SKU Number: " + skuNum);
-        System.out.print("Product Name: " + productName);
-        System.out.print("Product Cost: " + productCost);
-        System.out.print("Number in Stock: " + inStock);
-        System.out.print("Need to Order: " + toOrder);
-        System.out.print("Special Instructions: " + specialInstructions);
+        System.out.println("SKU Number: " + skuNum);
+        System.out.println("Product Name: " + productName);
+        System.out.println("Product Cost: " + productCost);
+        System.out.println("Number in Stock: " + inStock);
+        System.out.println("Need to Order: " + toOrder);
+        System.out.println("Special Instructions: " + specialInstructions);
     }
 
 }

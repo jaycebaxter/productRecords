@@ -19,8 +19,15 @@ public class Perishable extends Product{
         this.expiryDate = LocalDate.of(1970, 1, 1);
     }
 
+    // Parameterized constructor
     public Perishable(int skuNum, String productName, double productCost, int inStock, int toOrder, String specialInstructions, LocalDate expiryDate) {
         super(skuNum, productName, productCost, inStock, toOrder, specialInstructions);
         this.expiryDate = expiryDate;
+    }
+
+
+    public void display() {
+        display();
+        System.out.println("Expiry Date: " + expiryDate);
     }
 }

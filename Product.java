@@ -76,6 +76,7 @@ public class Product {
         this.specialInstructions = specialInstructions;
     }
 
+    // Display function
     public void display() {
         System.out.print("SKU Number: " + skuNum);
         System.out.print("Product Name: " + productName);

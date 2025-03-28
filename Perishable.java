@@ -25,9 +25,9 @@ public class Perishable extends Product{
         this.expiryDate = expiryDate;
     }
 
-
-    public void display() {
-        display();
-        System.out.println("Expiry Date: " + expiryDate);
+    @Override
+        public void display() {
+            super.display();
+            System.out.println("Expiry Date: " + expiryDate);
     }
 }

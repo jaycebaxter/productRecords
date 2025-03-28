@@ -8,7 +8,7 @@ public class Driver {
     public static void main(String[] args) {
 
         // Initializing list of objects
-        ArrayList<Object> productArray = new ArrayList<Object>();
+        ArrayList<Product> productArray = new ArrayList<Product>();
 
 
         // Non-perishable products
@@ -39,8 +39,8 @@ public class Driver {
         productArray.add(breadLoaf);
 
         // https://www.w3schools.com/java/java_howto_loop_through_arraylist.asp
-        for (Object i : productArray) {
-            System.out.println(i);
+        for (Product product : productArray) {
+            product.display();
         }
     }
 }

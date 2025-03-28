@@ -38,16 +38,9 @@ public class Driver {
         productArray.add(blueberries);
         productArray.add(breadLoaf);
 
-        // I stole this from geeks4geeks
-        // it is probably not the most efficient way but I wanted to try something new
-        // https://www.geeksforgeeks.org/iterating-arraylists-java/
-
-        Enumeration<Object> e
-                = Collections.enumeration(productArray);
-
-        while (e.hasMoreElements())
-            System.out.println(e.nextElement());
+        // https://www.w3schools.com/java/java_howto_loop_through_arraylist.asp
+        for (Object i : productArray) {
+            System.out.println(i);
+        }
     }
 }
-
-

@@ -25,35 +25,30 @@ public class Product {
     public void setSkuNum(int skuNum) {
         this.skuNum = skuNum;
     }
-
     public String getProductName() {
         return productName;
     }
     public void setProductName(String productName) {
         this.productName = productName;
     }
-
     public double getProductCost() {
         return productCost;
     }
     public void setProductCost(double productCost) {
         this.productCost = productCost;
     }
-
     public int getInStock() {
         return inStock;
     }
     public void setInStock(int inStock) {
         this.inStock = inStock;
     }
-
     public int getToOrder() {
         return toOrder;
     }
     public void setToOrder(int toOrder) {
         this.toOrder = toOrder;
     }
-
     public String getSpecialInstructions() {
         return specialInstructions;
     }

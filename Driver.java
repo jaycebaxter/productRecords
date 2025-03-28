@@ -1,15 +1,24 @@
+/**
+ * @Program             productRecords
+ * @Author              Jayce Baxter
+ * @Date                March 28th, 2025
+ * @Description         Collects information about various products, both perishable and nonperishable
+ */
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
 
-
+/**
+ * Driver class
+ */
 public class Driver {
     public static void main(String[] args) {
 
         // Initializing list of objects
         ArrayList<Product> productArray = new ArrayList<Product>();
-        
+
         // Non-perishable products
         // Canned Beans
         Product cannedBeans = new Product(100629175, "Canned Beans", 5.99, 16, 3, "BE CAREFUL!!!!!!!!!!!!!!");
@@ -39,6 +48,7 @@ public class Driver {
         productArray.add(breadLoaf);
 
         // https://www.w3schools.com/java/java_howto_loop_through_arraylist.asp
+        // I have a very loose idea of what that colon does but it's pulling a lot of weight
         for (Product product : productArray) {
             System.out.println("");
             product.display();

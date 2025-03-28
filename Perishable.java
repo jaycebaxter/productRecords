@@ -18,8 +18,9 @@ public class Perishable extends Product{
         super();
         this.expiryDate = LocalDate.of(1970, 1, 1);
     }
-    
-    public Perishable() {
 
+    public Perishable(int skuNum, String productName, double productCost, int inStock, int toOrder, String specialInstructions, LocalDate expiryDate) {
+        super(skuNum, productName, productCost, inStock, toOrder, specialInstructions);
+        this.expiryDate = expiryDate;
     }
 }

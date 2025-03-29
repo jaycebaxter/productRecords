@@ -23,7 +23,6 @@ public class Product {
     private String specialInstructions;
 
     // Getters and setters
-
     /**
      *
      * @return SKU Number

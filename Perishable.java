@@ -10,11 +10,11 @@ public class Perishable extends Product{
     private LocalDate expiryDate;
 
     // Getter & setter for expiryDate
-
     /**
      *
      * @return expiry date
      */
+
     public LocalDate getExpiryDate() {
         return expiryDate;
     }

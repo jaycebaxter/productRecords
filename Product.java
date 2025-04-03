@@ -1,4 +1,11 @@
 /**
+ * @Program             productRecords
+ * @Author              Jayce Baxter
+ * @Date                March 28th, 2025
+ * @Description         Collects information about various products, both perishable and nonperishable
+ */
+
+/**
  * Product Class
  */
 
@@ -24,103 +31,109 @@ public class Product {
 
     // Getters and setters
     /**
-     *
+     * Gets the SKU Number of the product
      * @return SKU Number
      */
-    public int getSkuNum() {
+    public final int getSkuNum() {
         return skuNum;
     }
 
     /**
-     *
-     * @param skuNum
+     * Sets the SKU number of the product
+     * @param skuNum SKU Number
      */
-    public void setSkuNum(int skuNum) {
+    public final void setSkuNum(int skuNum) {
         this.skuNum = skuNum;
     }
 
     /**
-     *
+     * Gets the product name
      * @return product name
      */
-    public String getProductName() {
+    public final String getProductName() {
         return productName;
     }
 
     /**
-     *
-     * @param productName
+     * Sets the product name
+     * @param productName Product Name
      */
-    public void setProductName(String productName) {
+    public final void setProductName(String productName) {
         this.productName = productName;
     }
 
     /**
-     *
+     * Gets the product cost
      * @return product cost
      */
-    public double getProductCost() {
+    public final double getProductCost() {
         return productCost;
     }
 
     /**
-     *
-     * @param productCost
+     * Sets the product cost
+     * @param productCost Product cost
      */
-    public void setProductCost(double productCost) {
+    public final void setProductCost(double productCost) {
         this.productCost = productCost;
     }
 
     /**
-     *
+     * Gets the number in stock
      * @return num in stock
      */
-    public int getInStock() {
+    public final int getInStock() {
         return inStock;
     }
 
     /**
-     *
-     * @param inStock
+     * Sets the number in stock
+     * @param inStock Number in stock
      */
-    public void setInStock(int inStock) {
+    public final void setInStock(int inStock) {
         this.inStock = inStock;
     }
 
     /**
-     *
+     * Gets the number to order
      * @return num to order
      */
-    public int getToOrder() {
+    public final int getToOrder() {
         return toOrder;
     }
 
     /**
-     *
-     * @param toOrder
+     * Sets the number to order
+     * @param toOrder Number to order
      */
-    public void setToOrder(int toOrder) {
+    public final void setToOrder(int toOrder) {
         this.toOrder = toOrder;
     }
 
     /**
-     *
+     * Gets the special instructions
      * @return special instructions
      */
-    public String getSpecialInstructions() {
+    public final String getSpecialInstructions() {
         return specialInstructions;
     }
 
     /**
-     *
-     * @param specialInstructions
+     * Sets the special instructions
+     * @param specialInstructions Special instructions
      */
-    public void setSpecialInstructions(String specialInstructions) {
+    public final void setSpecialInstructions(String specialInstructions) {
         this.specialInstructions = specialInstructions;
     }
 
     /**
      * Default Constructor
+     * Sets the SKU number to 0
+     * Sets the product name to N/A
+     * Sets the product cost to 0.00
+     * Sets the number in stock to 0
+     * Sets the number to order to 0
+     * Sets the special instructions to N/A
      */
     public Product() {
         this.skuNum = 0;
@@ -133,12 +146,12 @@ public class Product {
 
     /**
      * Parameterized Constructor
-     * @param skuNum
-     * @param productName
-     * @param productCost
-     * @param inStock
-     * @param toOrder
-     * @param specialInstructions
+     * @param skuNum SKU Number of the product
+     * @param productName Name of the product
+     * @param productCost Cost of the product
+     * @param inStock Number of the product in stock
+     * @param toOrder Number of the product to order
+     * @param specialInstructions Special instructions for storing the product
      */
     public Product(int skuNum, String productName, double productCost, int inStock, int toOrder, String specialInstructions) {
         this.skuNum = skuNum;
@@ -149,7 +162,9 @@ public class Product {
         this.specialInstructions = specialInstructions;
     }
 
-    // Display function
+    /**
+     * Display function
+     */
     public void display() {
         System.out.println("SKU Number: " + skuNum);
         System.out.println("Product Name: " + productName);

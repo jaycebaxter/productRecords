@@ -14,7 +14,20 @@ import java.util.Enumeration;
  * Driver class
  */
 public class Driver {
+
+    /**
+     * Main method
+     * @param args
+     */
     public static void main(String[] args) {
+        new Driver();
+    }
+
+    /**
+     * Default constructor
+     */
+
+    public Driver() {
 
         // Initializing arraylist of products
         ArrayList<Product> productArray = new ArrayList<Product>();
@@ -22,7 +35,7 @@ public class Driver {
         // Non-perishable products
         // Canned Beans
         Product cannedBeans = new Product(100629175, "Canned Beans", 5.99, 16, 3, "Store at room temp");
-
+        
         // Canned Corn
         Product cannedCorn = new Product(100838575, "Canned Corn", 4.50, 5, 15, "Gorn lol");
 
